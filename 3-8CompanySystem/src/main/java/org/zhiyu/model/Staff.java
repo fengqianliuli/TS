@@ -1,11 +1,29 @@
 package org.zhiyu.model;
 
 public class Staff {
+    /**
+     * 员工名称
+     */
     private String staffName;
+    /**
+     * 员工编号
+     */
     private String staffNumber;
+    /**
+     * 员工年龄
+     */
     private Integer staffAge;
+    /**
+     * 员工性别
+     */
     private String staffSex;
+    /**
+     * 员工所属部门
+     */
     private Department department;
+    /**
+     * 员工职位
+     */
     private Post post;
 
     public Staff(String staffName, String staffNumber, Integer staffAge, String staffSex, Department department, Post post) {
@@ -73,6 +91,10 @@ public class Staff {
         this.post = post;
     }
 
+    /**
+     * 员工自我介绍
+     * @return data
+     */
     public String selfIntroduction() {
         return "姓名:" + staffName + "\n" +
                "工号:" + staffNumber + "\n" +

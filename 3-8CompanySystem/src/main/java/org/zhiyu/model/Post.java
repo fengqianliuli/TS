@@ -1,7 +1,13 @@
 package org.zhiyu.model;
 
 public class Post {
+    /**
+     * 职位编号
+     */
     private String postNumber;
+    /**
+     * 职位名称
+     */
     private String postName;
 
     public Post(String postNumber, String postName) {

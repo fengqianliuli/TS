@@ -4,8 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Department {
+    /**
+     * 部门编号
+     */
     private String departNumber;
+    /**
+     * 部门名称
+     */
     private String departName;
+    /**
+     * 部门下所有员工
+     */
     private List<Staff> staffList = new ArrayList<>();
 
     public Department(String departNumber, String departName) {
@@ -45,6 +54,10 @@ public class Department {
         this.staffList.remove(staff);
     }
 
+    /**
+     * 获取当前部门下员工数量
+     * @return data
+     */
     public String getStaffQuantity () {
         return this.departName + "总共有" + this.staffList.size() + "名员工";
     }
