@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>3-8CompanySystem</module>
+        <module>4-7FreeCodeing</module>
     </modules>
 
 
