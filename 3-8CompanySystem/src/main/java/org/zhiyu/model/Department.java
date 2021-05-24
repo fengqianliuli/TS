@@ -15,11 +15,12 @@ public class Department {
     /**
      * 部门下所有员工
      */
-    private List<Staff> staffList = new ArrayList<>();
+    private List<Staff> staffList;
 
     public Department(String departNumber, String departName) {
         this.departNumber = departNumber;
         this.departName = departName;
+        this.staffList = new ArrayList<>();
     }
 
     public String getDepartNumber() {
